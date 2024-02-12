@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hw-1</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,15 +16,25 @@
         <button class="top__btn">Поехали!</button>
     </div>
     <div class="play center">
-        <a class="play__box game1" href="#">
+        <a class="play__box game-1" href="#">
             <div class="game">Игра 1</div>
         </a>
-        <a class="play__box game2" href="#">
+        <a class="play__box game-2" href="#">
             <div class="game">Игра 2</div>
         </a>
-        <a class="play__box game3" href="#">
+        <a class="play__box game-3" href="#">
             <div class="game">Игра 3</div>
         </a>
+    </div>
+    <div class="game__one center">
+        <div class="game__one_info">
+            <h2 class="game__one_title">Времена года!</h2>
+            <p class="game__one_text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <button onclick="alert(monthNumber())"; class="game__one_btn">Играть!</button>
+        </div>
+        <div>
+            <img class="game__one_img" src="img/undraw_video_game_night_8h8m 1.png" alt="game__img">
+        </div>
     </div>
 </body>
 </html>
