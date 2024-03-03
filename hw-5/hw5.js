@@ -2,6 +2,7 @@
 function min(a, b) {
     return a < b ? a : b;
 }
+console.log(min(4,5));
 
 //Задание 2
 function parity(num) {
@@ -11,6 +12,7 @@ function parity(num) {
         return "Число нечетное"
     }
 }
+console.log(parity(5));
 
 //Задание  3.1 
 function square(num) {
@@ -24,8 +26,13 @@ function returnSquare(num) {
 
 //Задание 4
 function question() {
-    let age = prompt("Скольео вам лет?");
-    if (age < 0) {
+    let age = prompt("Сколько вам лет?");
+    if (!age){
+        return
+    }
+    age = Number(age)
+
+    if (age < 0 || isNaN(age)) {
         console.log("Вы ввели неправильное значение");
     } else if (age <= 12) {
         console.log("Привет друг!");
@@ -33,6 +40,7 @@ function question() {
         console.log("Добро пожаловать!");
     }
 }
+question()
 //Задание 5
 function numbers(a, b) {
     if (isNaN(a) || isNaN(b)) {
@@ -45,6 +53,9 @@ function numbers(a, b) {
 //Задание 6
 function cube() {
     let num = prompt("Введите число:");
+    if (!num){
+       return
+    }
     num = Number(num);
     if (isNaN(num)) {
         return 'Переданный параметр не является числом';
@@ -76,7 +87,7 @@ const circle2 = {
 };
 
 //Задание 8
-function monthNumber() {
+function monthNumber(month) {
     if (month >= 3 && month <= 5) {
         return 'Весна';
     } else if (month >= 6 && month <= 8) {
@@ -90,4 +101,4 @@ function monthNumber() {
     }
 }
 
-console.log(monthNumber(prompt("Введите число:")));
+console.log(monthNumber(prompt("Введите число:")));   
