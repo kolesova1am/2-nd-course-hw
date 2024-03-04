@@ -1,4 +1,4 @@
-function monthNumber() {
+function monthNumber(month) {
     if (month >= 3 && month <= 5) {
         return 'Весна';
     } else if (month >= 6 && month <= 8) {
@@ -12,4 +12,5 @@ function monthNumber() {
     }
 }
 
+console.log(monthNumber(prompt("Введите число:")));
 
