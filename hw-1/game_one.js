@@ -1,16 +1,17 @@
-function monthNumber(month) {
+function monthNumber() {
+const month = prompt("Введите число;" )
     if (month >= 3 && month <= 5) {
-        return 'Весна';
+        alert('Весна');
     } else if (month >= 6 && month <= 8) {
-        return 'Лето';
+        alert('Лето');
     } else if (month >= 9 && month <= 11) {
-        return 'Осень';
+        alert('Осень');
     } else if (month >= 1 && month <= 2 || month === 12){
-        return 'Зима';
+        alert('Зима');
     } else {
-        return 'Ошибка'
+        alert('Ошибка');
     }
 }
 
-console.log(monthNumber(prompt("Введите число:")));
+
 
